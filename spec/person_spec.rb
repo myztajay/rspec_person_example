@@ -3,7 +3,7 @@ require_relative '../models/person'  # a reference to our code
 describe Person do
   describe "Constructor" do
     before(:each) do
-      @matt = Person.new("Matt")
+      @matt = Person.new("Matt", "Russian")
     end
 
     it "should create a new instance of class Person" do
@@ -15,7 +15,7 @@ describe Person do
     end
 
     it "should default #language to 'English'" do
-      expect(@matt.language).to eq("English")
+      expect(@matt.language).to eq("Russian")
     end
   end
 
